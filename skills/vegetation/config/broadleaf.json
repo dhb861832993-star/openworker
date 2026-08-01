@@ -1,0 +1,66 @@
+{
+  "name": "broadleaf",
+  "label": "阔叶林",
+  "climate": "temperate_warm",
+  "description": "温带暖温带阔叶林：栎树、桦树、杨树、槭树。喜温，阳坡为主。",
+  "species": [
+    {
+      "name": "oak",
+      "label": "栎树",
+      "color": [85, 105, 55],
+      "shape": "broadleaf",
+      "min_size": 1.0, "max_size": 2.0,
+      "rules": {
+        "min_height": 0.05, "max_height": 0.32,
+        "max_slope": 33,
+        "aspects": ["S", "SE", "SW"],
+        "min_moisture": 0.05
+      },
+      "density": 0.55,
+      "note": "栎树林带，阳坡温暖处"
+    },
+    {
+      "name": "birch",
+      "label": "白桦",
+      "color": [110, 130, 70],
+      "shape": "broadleaf",
+      "min_size": 1.0, "max_size": 2.0,
+      "rules": {
+        "min_height": 0.06, "max_height": 0.30,
+        "max_slope": 33,
+        "min_moisture": 0.06
+      },
+      "density": 0.40,
+      "note": "桦树喜光，常见于林缘和次生林"
+    },
+    {
+      "name": "poplar",
+      "label": "杨树",
+      "color": [95, 120, 60],
+      "shape": "broadleaf",
+      "min_size": 1.0, "max_size": 2.0,
+      "rules": {
+        "min_height": 0.02, "max_height": 0.26,
+        "max_slope": 20,
+        "min_moisture": 0.08
+      },
+      "density": 0.35,
+      "note": "杨树喜湿，河谷和阴坡下部"
+    },
+    {
+      "name": "maple",
+      "label": "槭树",
+      "color": [80, 100, 50],
+      "shape": "broadleaf",
+      "min_size": 1.0, "max_size": 2.0,
+      "rules": {
+        "min_height": 0.08, "max_height": 0.40,
+        "max_slope": 33,
+        "aspects": ["N", "NE", "E"],
+        "min_moisture": 0.07
+      },
+      "density": 0.30,
+      "note": "槭树耐阴，混生于阔叶林下层"
+    }
+  ]
+}

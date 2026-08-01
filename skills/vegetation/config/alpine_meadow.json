@@ -1,0 +1,77 @@
+{
+  "name": "alpine_meadow",
+  "label": "高山草甸",
+  "climate": "alpine",
+  "description": "高山草甸灌丛：嵩草、苔草、高山杜鹃、报春。林线以上，雪线以下。",
+  "species": [
+    {
+      "name": "kobresia",
+      "label": "嵩草",
+      "color": [120, 140, 70],
+      "shape": "grass",
+      "min_size": 0.1, "max_size": 0.3,
+      "rules": {
+        "min_height": 0.45, "max_height": 0.72,
+        "max_slope": 25
+      },
+      "density": 0.85,
+      "note": "高山草甸建群种，密集地毯状"
+    },
+    {
+      "name": "carex",
+      "label": "苔草",
+      "color": [100, 120, 60],
+      "shape": "grass",
+      "min_size": 0.1, "max_size": 0.25,
+      "rules": {
+        "min_height": 0.40, "max_height": 0.68,
+        "max_slope": 30,
+        "min_moisture": 0.05
+      },
+      "density": 0.70,
+      "note": "苔草喜湿，草甸中湿润处"
+    },
+    {
+      "name": "rhododendron",
+      "label": "高山杜鹃",
+      "color": [70, 100, 55],
+      "shape": "shrub",
+      "min_size": 0.3, "max_size": 0.8,
+      "rules": {
+        "min_height": 0.38, "max_height": 0.65,
+        "max_slope": 35,
+        "aspects": ["N", "NE", "NW"],
+        "min_moisture": 0.06
+      },
+      "density": 0.40,
+      "note": "杜鹃灌丛，北坡阴湿处成片"
+    },
+    {
+      "name": "primula",
+      "label": "报春花",
+      "color": [150, 160, 80],
+      "shape": "herb",
+      "min_size": 0.05, "max_size": 0.15,
+      "rules": {
+        "min_height": 0.42, "max_height": 0.70,
+        "max_slope": 20,
+        "min_moisture": 0.04
+      },
+      "density": 0.50,
+      "note": "高山草本花卉，点缀于草甸中"
+    },
+    {
+      "name": "lichens",
+      "label": "地衣苔藓",
+      "color": [90, 95, 70],
+      "shape": "ground",
+      "min_size": 0.02, "max_size": 0.10,
+      "rules": {
+        "min_height": 0.55, "max_height": 0.85,
+        "min_slope": 10
+      },
+      "density": 0.60,
+      "note": "流石滩地衣，雪线附近最后植被"
+    }
+  ]
+}

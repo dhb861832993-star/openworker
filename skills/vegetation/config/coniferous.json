@@ -1,0 +1,67 @@
+{
+  "name": "coniferous",
+  "label": "针叶林",
+  "climate": "temperate_cold",
+  "description": "温带寒温带针叶林：云杉、冷杉、松树、柏树。耐寒喜湿，北坡密集。",
+  "species": [
+    {
+      "name": "spruce",
+      "label": "云杉",
+      "color": [38, 70, 46],
+      "shape": "conifer",
+      "min_size": 1.2, "max_size": 2.2,
+      "rules": {
+        "min_height": 0.28, "max_height": 0.62,
+        "max_slope": 35,
+        "aspects": ["N", "NE", "NW", "E"],
+        "min_moisture": 0.08
+      },
+      "density": 0.65,
+      "note": "云杉林带主体，北坡阴湿处密集"
+    },
+    {
+      "name": "fir",
+      "label": "冷杉",
+      "color": [45, 80, 55],
+      "shape": "conifer",
+      "min_size": 1.0, "max_size": 1.8,
+      "rules": {
+        "min_height": 0.35, "max_height": 0.58,
+        "max_slope": 30,
+        "aspects": ["N", "NE", "NW"],
+        "min_moisture": 0.10
+      },
+      "density": 0.50,
+      "note": "冷杉比云杉更耐寒，分布更高更窄"
+    },
+    {
+      "name": "pine",
+      "label": "高山松",
+      "color": [55, 90, 50],
+      "shape": "conifer",
+      "min_size": 0.8, "max_size": 1.5,
+      "rules": {
+        "min_height": 0.22, "max_height": 0.50,
+        "max_slope": 40,
+        "aspects": ["S", "SE", "SW", "E", "W"],
+        "min_moisture": 0.03
+      },
+      "density": 0.45,
+      "note": "松树耐旱喜阳，南坡和阳面为主"
+    },
+    {
+      "name": "cypress",
+      "label": "柏树",
+      "color": [60, 75, 50],
+      "shape": "conifer",
+      "min_size": 0.7, "max_size": 1.3,
+      "rules": {
+        "min_height": 0.18, "max_height": 0.40,
+        "max_slope": 45,
+        "min_moisture": 0.02
+      },
+      "density": 0.30,
+      "note": "柏树耐旱耐瘠薄，陡坡岩石处生长"
+    }
+  ]
+}

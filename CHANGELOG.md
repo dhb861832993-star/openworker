@@ -2,6 +2,15 @@
 
 本项目基于 [andrewyng/openworker](https://github.com/andrewyng/openworker) 二次开发，感谢原作者 Andrew Ng 及 OpenWorker 团队的开源贡献。
 
+## [0.4.2] - 2026-08-01
+
+### 新增
+- **`/植被摆放` Skill 对接 UE5**：植被散布结果可直接导入 UE5.8 PCG
+  - 新增 `lib/ue5_export.py`：`vegetation.csv`（像素/网格坐标）→ UE5 `DataFromCSV` 兼容 CSV（世界坐标厘米：X/Y/Z/Roll/Pitch/Yaw/ScaleX/ScaleY/ScaleZ/Type/Biome/Label），纯标准库实现
+  - 自动生成 `ue5_mesh_map.json` 物种→StaticMesh 资产路径映射模板
+  - SKILL.md 新增「对接 UE5 引擎」章节：模式A 通过 `mcp__unreal-editor__*` MCP 自动构建 PCG 图（CreateGraph→AddNode→ConnectNodePins→SpawnGraphInstance→ExecuteGraphInstance）；模式B 手动导入
+  - 坐标对齐：支持 `--center`（高度图中心为原点）与 `--world-scale`（像素→厘米）
+
 ## [0.4.1] - 2026-07-31
 
 ### 修复
@@ -13,7 +22,6 @@
 - preview.py 支持内嵌 Three.js（不依赖 CDN）
 
 ## [0.4.0] - 2026-07-31
-
 ### 新增
 - **`/地形生成` Skill**：完整的纯 Python PCG 地形生成流水线，无需 Houdini
   - 地形噪声生成：山脉/丘陵/平原/峡谷/群岛 5 种风格

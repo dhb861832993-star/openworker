@@ -1,0 +1,65 @@
+{
+  "name": "tropical",
+  "label": "热带雨林",
+  "climate": "tropical",
+  "description": "热带亚热带常绿阔叶林：棕榈、榕树、蕨类、竹子。喜热多湿。",
+  "species": [
+    {
+      "name": "palm",
+      "label": "棕榈",
+      "color": [50, 100, 45],
+      "shape": "palm",
+      "min_size": 1.0, "max_size": 2.5,
+      "rules": {
+        "min_height": 0.02, "max_height": 0.25,
+        "max_slope": 25,
+        "min_moisture": 0.15
+      },
+      "density": 0.40,
+      "note": "热带低地棕榈"
+    },
+    {
+      "name": "fig",
+      "label": "榕树",
+      "color": [40, 85, 40],
+      "shape": "broadleaf",
+      "min_size": 1.5, "max_size": 3.5,
+      "rules": {
+        "min_height": 0.05, "max_height": 0.30,
+        "max_slope": 20,
+        "min_moisture": 0.12
+      },
+      "density": 0.35,
+      "note": "大型冠层乔木，雨林主体"
+    },
+    {
+      "name": "fern",
+      "label": "树蕨",
+      "color": [60, 95, 45],
+      "shape": "fern",
+      "min_size": 0.5, "max_size": 1.2,
+      "rules": {
+        "min_height": 0.08, "max_height": 0.35,
+        "max_slope": 30,
+        "aspects": ["N", "NE", "NW"],
+        "min_moisture": 0.18
+      },
+      "density": 0.45,
+      "note": "树蕨，阴湿林下层"
+    },
+    {
+      "name": "bamboo",
+      "label": "竹子",
+      "color": [70, 110, 50],
+      "shape": "bamboo",
+      "min_size": 0.8, "max_size": 1.6,
+      "rules": {
+        "min_height": 0.04, "max_height": 0.28,
+        "max_slope": 28,
+        "min_moisture": 0.10
+      },
+      "density": 0.60,
+      "note": "竹丛，次生林和林缘"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "wetland",
+  "label": "湿地河岸",
+  "climate": "riparian",
+  "description": "河岸湿地植被：柳树、芦苇、苔草、灯心草。喜湿，沿河道和低洼地分布。",
+  "species": [
+    {
+      "name": "willow",
+      "label": "柳树",
+      "color": [80, 110, 55],
+      "shape": "broadleaf",
+      "min_size": 0.6, "max_size": 1.4,
+      "rules": {
+        "min_height": 0.02, "max_height": 0.25,
+        "max_slope": 15,
+        "min_moisture": 0.15
+      },
+      "density": 0.50,
+      "note": "河岸柳树，沿河道密集分布"
+    },
+    {
+      "name": "reed",
+      "label": "芦苇",
+      "color": [120, 135, 65],
+      "shape": "grass",
+      "min_size": 0.15, "max_size": 0.4,
+      "rules": {
+        "min_height": 0.01, "max_height": 0.15,
+        "max_slope": 8,
+        "min_moisture": 0.20
+      },
+      "density": 0.80,
+      "note": "芦苇荡，湿地浅水区"
+    },
+    {
+      "name": "sedge_wet",
+      "label": "湿生苔草",
+      "color": [90, 115, 55],
+      "shape": "grass",
+      "min_size": 0.1, "max_size": 0.25,
+      "rules": {
+        "min_height": 0.03, "max_height": 0.20,
+        "max_slope": 12,
+        "min_moisture": 0.12
+      },
+      "density": 0.70,
+      "note": "湿地苔草草甸"
+    },
+    {
+      "name": "rush",
+      "label": "灯心草",
+      "color": [100, 120, 50],
+      "shape": "grass",
+      "min_size": 0.08, "max_size": 0.20,
+      "rules": {
+        "min_height": 0.01, "max_height": 0.12,
+        "max_slope": 5,
+        "min_moisture": 0.25
+      },
+      "density": 0.65,
+      "note": "灯心草，常年积水区"
+    }
+  ]
+}
